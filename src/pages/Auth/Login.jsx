@@ -1,15 +1,15 @@
+import Footer from "../../components/Footer/Footer";
 import Meta from "../../components/Meta/Meta";
 import Favicon from "../../assets/images/download.png";
 import MainIMage from "../../assets/images/Screenshot from 2023-12-07 23-39-38.png";
 import logo from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import { IoLogoFacebook } from "react-icons/io";
-import Footer from "../../components/Footer/Footer";
-const Auth = () => {
+const Login = () => {
     return (
         <>
             <Meta>
-                <title>Instagram</title>
+                <title>Login . Instagram</title>
                 <link
                     rel="shortcut icon"
                     href="https://static.cdninstagram.com/rsrc.php/v3/yI/r/VsNE-OHk_8a.png"
@@ -19,17 +19,9 @@ const Auth = () => {
             <section className="main-section flex justify-center items-center h-screen ">
                 <div className="container">
                     <div className="login-page flex justify-center items-center h-[80vh] gap-10">
-                        <div className="left">
-                            <div className="main-img">
-                                <img
-                                    src={MainIMage}
-                                    alt=""
-                                />
-                            </div>
-                        </div>
-                        <div className="right w-[330px]">
+                        <div className="right w-[380px]">
                             <div className="login-wrapper border">
-                                <div className="login-form flex justify-center items-center flex-col py-[25px] px-[30px] ">
+                                <div className="login-form flex justify-center items-center flex-col py-[25px] px-[35px] ">
                                     <div className="form-top pt-[10px] pb-[20px]">
                                         <img
                                             src={logo}
@@ -114,4 +106,5 @@ const Auth = () => {
         </>
     );
 };
-export default Auth;
+
+export default Login;
